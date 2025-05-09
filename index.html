@@ -7,108 +7,107 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <header>
-        <nav>
-            <img src="img/logo.png" alt="Logo" href="#home">
-            <ul>
-                <a href="#home">Home</a>
-                <a href="#about">Sobre Nós</a>
-                <a href="#services">Serviços</a>
-                <a href="#brief">Depoimentos</a>
-                <a href="#contact">Contato</a>
+    <header class="header">
+        <nav class="nav">
+            <img class="nav__img" src="img/logo.png" alt="Logo" href="#home">
+            <ul class="nav__ul">
+                <a class="nav__a" href="#home">Home</a>
+                <a class="nav__a" href="#about">Sobre Nós</a>
+                <a class="nav__a" href="#services">Serviços</a>
+                <a class="nav__a" href="#brief">Depoimentos</a>
+                <a class="nav__a" href="#contact">Contato</a>
             </ul>
         </nav>
     </header>
-    <main>
+    <main class="main">
         <!--Home-->
-        <section id="home">
-            <img src="img/wallpaperflare.com_wallpaper.jpg" alt="Fundo cidade">
-            <h1 id="Title">Agência Criativa Web</h1>
-            <h2>Venha reservar sua próxima viagem conosco, sua agência comprometida com o seu conforto e divertimento</h2>
-            <a href="#services" class="reservar">Reserve agora</a>
-
+        <section class="main__section__home" id="home">
+            <h1 class="home__title">Agência Criativa Web</h1>
+            <h2 class="home_explain-text">Venha reservar sua próxima viagem conosco...</h2>
+            <a class="adquire" href="#services">Reserve agora</a>
         </section>
+        
         <!--About-->
-        <section id="about">
-            <article class="about">
-                <h2>Sobre nós</h2>
-                <p>Somos uma empresa voltada para lhe proporcionar a melhor experiencia de viagem possível, onde iremos preparar tudo para você poder aproveitar ao máximo sem preocupações!</p>
+        <section class="main__section__about" id="about">
+            <article class="about__article">
+                <h2 class="about__title">Sobre nós</h2>
+                <p class="about__explain">Somos uma empresa voltada para lhe proporcionar a melhor experiencia de viagem possível, onde iremos preparar tudo para você poder aproveitar ao máximo sem preocupações!</p>
             
             </article>
-            <article class="about">
-                <h2>Nossa empresa</h2>
-                <p>Estamos consolidados no mercado a 5 anos proporcionando a melhor experiencia para sua viagem e com 100% de satisfação dos nossos clientes!</p>
+            <article class="main__section__about">
+                <h2 class="about__title">Nossa empresa</h2>
+                <p class="about__explain">Estamos consolidados no mercado a 5 anos proporcionando a melhor experiencia para sua viagem e com 100% de satisfação dos nossos clientes!</p>
             
             </article>
-            <article class="about">
-                <h2>Pronto para ter a melhor experiencia com viagens?</h2>
-                <p>Reserve agora mesmo!</p>
+            <article class="main__section__about">
+                <h2 class="about__title">Pronto para ter a melhor experiencia com viagens?</h2>
+                <p class="about__explain">Reserve agora mesmo!</p>
                 
             </article>
-            <a href="#services" class="reservar">Reservar agora</a>
+            <a class="adquire" href="#services">Reservar agora</a>
 
         </section>
         <!--Services-->
-        <section id="services">
-            <div>
+        <section class="main services" id="services">
+            <div class="main__services__div">
                 <!--Plano básico-->
-                <article>
-                    <h2 id="service-title">Plano básico</h2>
-                    <ul>
-                        <li>Acomodações de 3 estrelas para cima!</li>
-                        <li>Suporte durante toda a viagem</li>
-                        <li id="nocheck">atendimento VIP</li>
-                        <li id="nocheck">Tradutor</li>
+                <article class="main__services">
+                    <h2 class="services__article__title">Plano básico</h2>
+                    <ul class="servicess__article__ul">
+                        <li class="services__article__li">Acomodações de 3 estrelas para cima!</li>
+                        <li class="services__article__li">Suporte durante toda a viagem</li>
+                        <li class="services__article__li services__article__li--nocheck">atendimento VIP</li>
+                        <li class="services__article__li services__article__li--nocheck">Tradutor</li>
                         
                     </ul>
-                    <div id="price">
-                        <p class="value">R$ 1199,90/dia</p>
-                        <p class="discount">R$1399,90/dia</p>
-                        <a href="#contact">Adquirir</a>
+                    <div class="services__article__price">
+                        <p class="price__value">R$ 1199,90/dia</p>
+                        <p class="price__discount">R$1399,90/dia</p>
+                        <a class="adquire" href="#contact">Adquirir</a>
                     </div>
 
                 </article>
                 <!--Plano médio-->
-                <article>
-                    <h2 id="service-title">Plano médio</h2><p class="overlay-discount">RECOMENDADO!</p>
-                    <ul>
-                        <li>Acomodações de 4 estrelas para cima!</li>
-                        <li>Suporte durante toda a viagem</li>
-                        <li>atendimento VIP</li>
-                        <li id="nocheck">Tradutor</li>
+                <article class="main__services">
+                    <h2 class="services__article__title">Plano médio</h2><p class="overlay-discount">RECOMENDADO!</p>
+                    <ul class="servicess__article__ul">
+                        <li class="services__article__li">Acomodações de 4 estrelas para cima!</li>
+                        <li class="services__article__li">Suporte durante toda a viagem</li>
+                        <li class="services__article__li">atendimento VIP</li>
+                        <li class="services__article__li services__article__li--nocheck" id="nocheck">Tradutor</li>
                         
                     </ul>
-                    <div id="price">
-                        <p class="value">R$ 1499,90/dia</p>
-                        <p class="discount">R$1899,90/dia</p>
-                        <a href="#contact">Adquirir</a>
+                    <div class="services__article__price">
+                        <p class="price__value">R$ 1499,90/dia</p>
+                        <p class="price__discount">R$1899,90/dia</p>
+                        <a class="adquire" href="#contact">Adquirir</a>
                     </div>
 
                 </article>
                 <!--Plano VIP-->
-                <article>
-                    <h2 id="service-title">Plano VIP</h2>
-                    <ul>
-                        <li>Acomodações de 5 estrelas para cima!</li>
-                        <li>Suporte durante toda a viagem</li>
-                        <li>atendimento VIP</li>
-                        <li>Tradutor</li>
+                <article class="main__services">
+                    <h2 id="services__article__title">Plano VIP</h2>
+                    <ul class="servicess__article__ul">
+                        <li class="services__article__li">Acomodações de 5 estrelas para cima!</li>
+                        <li class="services__article__li">Suporte durante toda a viagem</li>
+                        <li class="services__article__li">atendimento VIP</li>
+                        <li class="services__article__li">Tradutor</li>
                         
                     </ul>
-                    <div id="price">
-                        <p class="value">R$ 2499,90/dia</p>
-                        <p class="discount">R$2899,90/dia</p>
-                        <a href="#contact">Adquirir</a>
+                    <div class="services__article__price">
+                        <p class="price__value">R$ 2499,90/dia</p>
+                        <p class="price__discount">R$2899,90/dia</p>
+                        <a class="adquire" href="#contact">Adquirir</a>
                     </div>
 
                 </article>
             </div>
         </section>
         <!--Brief-->
-        <section id="brief">
+        <section class="main__section__brief" id="brief">
             <!--Depoimento 1-->
-            <div>
-                <h2>Depoimentos</h2>
+            <div class="section__brief">
+                <h2 class="brief__title">Depoimentos</h2>
                 <article class="depoiment">
                     <p class="rating">5/5</p>
                     <h3 class="name">Ana Souza</h3>
@@ -133,7 +132,7 @@
             </div>
             <a href="#contact" class="reservar">Adquirir agora!</a>
         </section>
-        <section id="contact">
+        <section class="main_section__contact" id="contact">
             <h2 class="title-contact">Fale Conosco</h2>
             <form action="" method="post" enctype="text/plain">
               <label for="nome">Nome:</label><br>
@@ -149,7 +148,7 @@
             </form>
         </section>
     </main>
-    <footer>
+    <footer class="footer">
         <p>Projeto feito para portifolio e representação da aula de CSS EBAC, esse é um projeto ficticio e não deve ser levado a sério para uso comercial! Obrigado!</p>
     </footer>
 </body>
