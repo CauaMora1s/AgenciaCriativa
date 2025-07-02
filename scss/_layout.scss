@@ -1,0 +1,40 @@
+ @use 'variaveis' as *;
+
+.header {
+  background-color: $cor-primaria;
+  padding: $espacamento-medio 0;
+}
+
+.nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 0 $espacamento-medio;
+}
+
+.nav__img {
+  height: 50px;
+}
+
+.nav__ul {
+  display: flex;
+  gap: 1.5rem;
+  list-style: none;
+}
+
+.nav__a {
+  color: $cor-branca;
+  text-decoration: none;
+  font-weight: 500;
+  transition: color 0.3s;
+
+  &:hover {
+    color: $cor-secundaria;
+  }
+}
+
+main {
+  min-height: 100vh;
+}
